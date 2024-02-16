@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+
+<body>
+        
+        <img id="big-image" src="./economia-2.webp">
+
+    <div id="big-div">
+
+        <div class="little-divs">
+            <p> Converter <span>de</span></p>
+                <select onchange="changeFirstSelect()" class="white-boxes" id="my-first-select">
+                <option id="opt-real" value="real">R$ Real Brasileiro</option>
+                <option id="opt-dolar" value="dolar">$ Dolar Americano</option>
+                <option id="opt-euro" value="euro">€ Euro</option>
+                <option id="opt-libra" value="libra">£ Libra</option>
+                </select>
+        </div>
+
+        <div class="little-divs">
+            <p> Converter <span>para</span></p>
+                <select onchange="changeSecondSelect()" id="my-select" class="white-boxes">
+                <option class="option-of-select" id="opt-dolar" value="dolar">$ Dolar Americano</option>
+                <option class="option-of-select" id="opt-euro" value="euro">€ Euro</option>
+                <option class="option-of-select" id="opt-libra" value="libra">£ Libra</option>
+                <option class="option-of-select" id="opt-real" value="real">R$ Real Brasileiro</option>
+                </select>
+        </div>
+
+        <div class="little-divs">
+            <p>Valor</p>
+            <input id="input-currency" class="white-boxes" type="number" placeholder="R$ 10.000,00">
+        </div>
+
+        <button onclick="showOnScreen()" id="btn">CONVERTER</button>
+
+        <div id="bottom-div">
+            <div id="container">
+
+                <div id="brazil-box">
+                    <p id="title-real">Real</p>
+                    <img id="brazil-flag" src="./Brazil.png">
+                    <p id="currency-value-real">R$ 0,00</p>
+                </div>
+
+                    <img id="arrow" src="./bottom-arrow.webp">
+
+                <div id="united-states-box">
+                    <p id="title-dolar" >Dolar Americano</p>
+                    <img id="united-states-flag" src="./United States.png">
+                    <p id="currency-value-dolar">$ 0,00</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="./script-2.js"></script>
+<script src="./script.js"></script>
+
+</html>
