@@ -80,7 +80,7 @@ button {
 }
 
 #bottom-div {
-    height: 340px;
+    height: 380px;
     border-style: solid;
     border-radius: 15px;
     margin: 30px;
@@ -162,13 +162,25 @@ button:hover {
 }
 
 
+
+
+
 @media(max-width: 450px) {
+    html{
+        width: 100vw;
+        height: 110vh;
+    }
+
+    body{
+        width: 100vw;
+        height: 110vh;
+    }
+
     #big-div {
-        width: 345px;
-        height: 770px;
-        margin-left: 15vw;
-        position: fixed;
-        left: 1px;
+        margin-top: 10px;
+        width: 89vw;
+        height: 97vh;
+        margin-left: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -176,8 +188,8 @@ button:hover {
     }
 
     #big-image {
-        width: 490px;
-        height: 932px;
+        width: 100vw;
+        height: 130vh;
         position: fixed;
     }
 
@@ -198,39 +210,46 @@ button:hover {
     }
 
     #container {
-        width: 86%;
-        height: 42.5%;
+        width: 85%;
+        height: 54%;
         margin-top: 0px;
         position: absolute;
     }
 
-    #title-real {
-        width: 100%;
-        text-align: center;
-    }
-
     #united-states-flag {
         position: absolute;
-        bottom: 70px;
-        right: 120px;
+        bottom: 143px;
+        left: 0px;
     }
 
     #currency-value-dolar {
         position: absolute;
-        bottom: 25px;
+        bottom: 109px;
+        left: 6px;
     }
 
     #title-dolar {
         position: absolute;
-        bottom: 48px;
+        bottom: 127px;
+        left: 5px;
     }
 
     #brazil-flag {
-        margin-left: 121px;
+        margin-left: 122px;
+    }
+
+    #title-real {
+        width: 103%;
+        text-align: center;
+    }
+
+    #currency-value-real{
+        margin-left: 4px;
+
     }
 
     #arrow {
-        margin: 0 auto;
-        margin-top: 25px;
+        margin: 0.5 auto;
+        margin-top: 27px;
     }
 }
