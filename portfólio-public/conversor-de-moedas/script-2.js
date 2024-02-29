@@ -3,10 +3,10 @@ function changeImage(){
     const imagem = document.getElementById('big-image');
 
     if (larguraJanela < 500){
-        imagem.src = 'economia-3.avif';
+        imagem.src = './assets/economia-3.avif';
     } 
     else{
-        imagem.src = 'economia-2.webp';
+        imagem.src = './assets/economia-2.webp';
     }
 }window.addEventListener('resize', function() {
     changeImage();
